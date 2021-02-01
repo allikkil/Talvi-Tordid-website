@@ -1,0 +1,184 @@
+
+.outer-grid {
+    
+    position: relative;
+    top: 200px;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "container-exp"
+    "footer";
+}
+.container-exp {
+    grid-area: container-exp;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    height: fit-content;
+    width: 80%;
+    max-width: 1600px;
+
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.25fr 1fr;
+    column-gap: 20px;
+    row-gap: 80px;
+
+    grid-template-areas: "form content1"
+    "form content2"
+    ;
+}
+
+
+
+#form {
+    grid-area: form;
+}
+
+#content1{
+    grid-area: content1;
+}
+
+#content2{
+    grid-area: content2;
+    text-align: center;
+}
+
+#page-btm {
+    margin-top: 55px;
+    grid-area: footer;
+}
+
+
+
+.person-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content2 .header-text {
+    display: inline-block;
+    text-align: left;
+
+}
+
+#content2 ul {
+    margin-top: 10px;
+    padding-left: 30px;
+    font-family: "Roboto", "Montserrat", monospace;
+    font-size: 18px;
+    color: #3D405B;
+    
+}
+
+#content2 h1{
+    margin-top: 0;
+    
+}
+
+form {
+    margin-top: 30px;
+}
+
+.header-text h1 {
+    margin-top: 0;
+    font-family: "Liberation Serif", sans-serif;
+    font-size: 55px;
+    color: #A44200;
+}
+.header-text p {
+    margin-top: 20px;
+    font-family: "Roboto", "Montserrat", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3D405B;
+}
+
+.required {
+    margin-bottom: 20px;
+    font-family: "Roboto", "Montserrat", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #A44200;
+}
+
+label {
+    margin-top: 10px;
+    font-family: "Roboto", "Montserrat", monospace;
+    font-size: 18px;
+    color: #3D405B;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 6px;
+    border: solid 0.5px #707070;
+}
+
+textarea {
+    height: 275px;
+    resize: vertical;
+    font-size:16px;
+}
+input {
+    height: 30px;
+    margin-bottom: 15px;
+    
+}
+input[type="text"]
+{
+    font-size:16px;
+}
+
+input[type="submit"]{
+    margin-top: 15px;
+    padding: 0;
+    border: none;
+    width: 120px;
+    height: 50px;
+    background-color: #FFB100;
+    border-radius: 10px;
+    font-family: "Roboto", monospace;
+    font-size: 18px;
+    color: #F6F5EE;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #3D405B;
+    color: #FFB100;
+    transition: 0.2s ease-in-out;
+}
+
+@media only screen and (min-width:2000px){
+    .container-exp{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .header-text h1 {
+        font-size: 36px;
+    }
+    .container-exp{
+        top: 125px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        grid-template-areas: "content1"
+        "content2"
+        "form"
+        ;
+        row-gap: 40px;
+    }
+    
+
+}

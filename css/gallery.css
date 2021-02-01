@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+#body-container {
+    position: relative;
+    top: 200px;
+    max-width: 1600px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header-text h1 {
+    margin-top: 55px;
+    font-family: "Liberation Serif", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    
+    color: #A44200;
+}
+
+.first-header h1{
+    margin-top: 0;
+}
+
+.header-text h3 {
+    font-family: "Roboto", "Montserrat", monospace;
+    font-size: 18px;
+    color: #3D405B;
+}
+
+#page-btm {
+    position: relative;
+    top: 200px;
+}
+
+
+
+/* Gallery start */
+
+.gallery {
+    margin-top: 55px;
+}
+
+.gallery img {
+    transition: 0.5s;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+
+}
+
+.gallery img:hover {
+    
+    transform: scale(1.1);
+}
+
+/* Gallery end */
+
+@media only screen and (max-width:550px){
+    .header-text h1 {
+        font-size: 36px;
+    }
+
+}
+
+@media only screen and (min-width:2000px){
+    #body-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

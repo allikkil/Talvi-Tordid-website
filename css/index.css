@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+.grid-container > * {
+  margin: 12px 0 0 12px;
+}
+
+.grid-container {
+  
+  position: relative;
+  top: 200px;
+  /* padding-top: 155px; */
+
+  /* height: fit-content; */
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: -12px 0 0 -12px;
+  width: calc(100% + 12px);
+}
+
+.content1 {
+  position: relative;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-image: url("/Images/napoleon (2).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content2 {
+  position: relative;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-image: url("/Images/RGS.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content3 {
+  position: relative;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-image: url("/Images/prekr.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content4 {
+  position: relative;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-image: url("/Images/js.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.div-bottom button {
+    border-radius: 6px;
+    background-color: #A21C00;
+    color: #F6F5EE;
+    border: none;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 20px;
+
+    font-family: "Montserrat", "Roboto", monospace;
+}
+
+.div-bottom button:hover {
+    cursor: pointer;
+    background-color: #3D405B;
+    color: #FFB100;
+    transition: 0.2s ease-in-out;
+}
+
+#page-btm {
+  position: relative;
+  top: 200px;
+}
