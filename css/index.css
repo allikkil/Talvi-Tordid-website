@@ -1,31 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+.banner {
+  position: relative;
+  top: 100px;
+  height: 400px;
+  background-image: url("/Images/cover3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.banner h1 {
+  width: 100%;
+  max-width: 1000px;
+  font-size: 74px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #F6F5EE;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .grid-container > * {
-  margin: 12px 0 0 12px;
+  margin: 70px 0 0 70px;
 }
 
 .grid-container {
-  
   position: relative;
-  top: 200px;
-  /* padding-top: 155px; */
-
-  /* height: fit-content; */
+  top: 140px;
 
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  margin: -12px 0 0 -12px;
-  width: calc(100% + 12px);
+  margin: -70px 0 0 -70px;
+  width: calc(100% + 70px);
 }
 
 .content1 {
   position: relative;
   text-align: center;
-  height: 250px;
-  width: 250px;
+  height: 390px;
+  width: 390px;
   background-image: url("/Images/napoleon (2).jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -34,8 +58,8 @@
 .content2 {
   position: relative;
   text-align: center;
-  height: 250px;
-  width: 250px;
+  height: 390px;
+  width: 390px;
   background-image: url("/Images/RGS.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -44,8 +68,8 @@
 .content3 {
   position: relative;
   text-align: center;
-  height: 250px;
-  width: 250px;
+  height: 390px;
+  width: 390px;
   background-image: url("/Images/prekr.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -54,9 +78,9 @@
 .content4 {
   position: relative;
   text-align: center;
-  height: 250px;
-  width: 250px;
-  background-image: url("/Images/js.jpg");
+  height: 390px;
+  width: 390px;
+  background-image: url("/Images/suupisted.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,27 +93,193 @@
 }
 
 .div-bottom button {
-    border-radius: 6px;
-    background-color: #A21C00;
-    color: #F6F5EE;
-    border: none;
-    height: 40px;
-    margin-bottom: 10px;
-    padding: 5px 20px;
-    font-weight: 600;
-    font-size: 20px;
+  border-radius: 6px;
+  background-color: #a21c00;
+  color: #f6f5ee;
+  border: none;
+  height: 65px;
+  margin-bottom: 10px;
+  padding: 0px 25px;
+  font-weight: 600;
+  font-size: 30px;
 
-    font-family: "Montserrat", "Roboto", monospace;
+  font-family: "Montserrat", "Roboto", monospace;
 }
 
 .div-bottom button:hover {
-    cursor: pointer;
-    background-color: #3D405B;
-    color: #FFB100;
-    transition: 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #3d405b;
+  color: #ffb100;
+  transition: 0.2s ease-in-out;
 }
 
 #page-btm {
   position: relative;
-  top: 200px;
+  top: 300px;
+}
+
+#meist, #top {
+  scroll-margin-top: 100px;
+}
+.about-container {
+  position: relative;
+  top: 140px;
+  margin-top: 55px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "about1 about2"
+    "about3 about4";
+  row-gap: 100px;
+}
+
+.about1 {
+  grid-area: about1;
+}
+
+h1, h2 {
+  font-family: "Liberation Serif", sans-serif;
+  color: #3D405B;
+}
+
+h3 {
+  font-family: "Roboto", "Montserrat", monospace;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: #A44200;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #A44200;
+}
+
+p {
+  font-size: 18px;
+  color: #3D405B;
+  line-height: 1.5em;
+}
+
+.about2 {
+  grid-area: about2;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+.about3 {
+  grid-area: about3;
+}
+.about4 {
+  grid-area: about4;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about1 h3, p {
+  margin-top: 35px;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about2 img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 230px;
+  display: block;
+  margin-left: auto;
+}
+
+.about3 h2{
+  margin-top: 20px;
+}
+
+.about4 img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+}
+
+@media only screen and (min-width:2000px){
+  .about-container{
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media only screen and (max-width:1500px){
+  .grid-container > * {
+    margin: 12px 0 0 12px;
+  }
+  .grid-container {
+    margin: -12px 0 0 -12px;
+    width: calc(100% + 12px);
+  }
+  .content1, .content2, .content3, .content4 {
+    height: 250px;
+    width: 250px;
+  }
+
+  .div-bottom button {
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  h1 {
+      font-size: 36px;
+  }
+  
+  .about-container{
+
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: auto;
+
+      grid-template-areas: "about2"
+      "about1"
+      "about3"
+      "about4"
+      ;
+      row-gap: 40px;
+  }
+
+  .about1 h1, h3 {
+    width: 100%;
+
+    text-align: center;
+  }
+  .about3 h1, h2 {
+    width: 100%;
+
+    text-align: center;
+  }
+  .about2 img {
+    margin-right: auto;
+  }
+  .about4 img {
+    margin-right: auto;
+  }
+  
+
+}
+
+@media only screen and (max-width:750px){
+  .banner h1 {
+      font-size: 44px;
+  }
 }
